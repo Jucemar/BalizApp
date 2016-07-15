@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="br.com.jucemar_dimon.balizapp.EstacionarActivity">
+
+
+
+    <include layout="@layout/content_estacionar" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_desligar_leds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:paddingRight="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="72dp"
+        android:src="@drawable/ic_led_on_white_24dp"
+        app:layout_anchor="@+id/fab_desligar_som"
+        app:fabSize="mini"
+
+     />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_desligar_som"
+        app:fabSize="mini"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+
+        android:src="@drawable/ic_volume_high_white_24dp"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>
